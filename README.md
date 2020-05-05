@@ -10,11 +10,8 @@ Paper link: https://arxiv.org/abs/2002.05540
 Humans are very good at directing their visual attention toward relevant areas when they search for different types of objects. For instance, when we search for cars, we will look at the streets, not at the top of buildings. The motivation of this paper is to train a network to do the same via a multi-task learning approach. To train visual attention, we produce foreground/background segmentation labels in a semi-supervised way, using background subtraction or optical flow. Using these labels, we train an object detection model to produce foreground/background segmentation maps as well as bounding boxes while sharing most model parameters. We use those segmentation maps inside the network as a self-attention mechanism to weight the feature map used to produce the bounding boxes, decreasing the signal of non-relevant areas. We show that by using this method, we obtain a significant mAP improvement on two traffic surveillance datasets, with state-of-the-art results on both UA-DETRAC and UAVDT.
 
 ## Model
-<object data="imgs/model.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="imgs/model.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="imgs/model.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![Model](imgs/SpotNet.png "")
+
 Overview of SpotNet: the input image first passes through a double-stacked hourglass network; the segmentation head then produces an attention map that multiplies the final feature map of the backbone network; the final center keypoint heatmap is then produced as well as the size and coordinate offset regressions for each object.
 
 ## Organization of the Repository
