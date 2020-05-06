@@ -72,6 +72,7 @@ for count, img in enumerate(images):
         print(str(det)[1:-1].translate(str.maketrans('', '', '\' ')), file=target_file)
 
     """
+    # code to produce segmentation maps
     map = np.zeros((height, width))
     for box in boxes:
         map[box[1]:box[3], box[0]:box[2]] = 1
