@@ -62,14 +62,14 @@ for count, img in enumerate(images):
 
     runRet = detector.run(img.strip())
     ret = runRet['results']
-    # for label in [1]:  # [1, 2, 3, 4]:
     boxes = []
-    for det in ret[1]:
-        box = [int(item) for item in det[:4]]
-        if float(det[4]) > 0.15 and (box[2] - box[0]) * (box[2] - box[0]) < (width * height) / 2:
-            boxes.append(box)
-        det = [img.strip()] + box + [class_name[1]] + [det[4]]
-        print(str(det)[1:-1].translate(str.maketrans('', '', '\' ')), file=target_file)
+    for label in [1, 2, 3, 4]:
+        for det in ret[label]:
+            box = [int(item) for item in det[:4]]
+            if float(det[4]) > 0.15 and (box[2] - box[0]) * (box[2] - box[0]) < (width * height) / 2:
+                boxes.append(box)
+            det = [img.strip()] + box + [class_name[label]] + [det[4]]
+            print(str(det)[1:-1].translate(str.maketrans('', '', '\' ')), file=target_file)
 
     """
     # code to produce segmentation maps
