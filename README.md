@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spotnet-self-attention-multi-task-network-for/object-detection-on-ua-detrac)](https://paperswithcode.com/sota/object-detection-on-ua-detrac?p=spotnet-self-attention-multi-task-network-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/spotnet-self-attention-multi-task-network-for/object-detection-on-uavdt)](https://paperswithcode.com/sota/object-detection-on-uavdt?p=spotnet-self-attention-multi-task-network-for)
 # SpotNet
 Repository for the paper SpotNet: Self-Attention Multi-Task Network for Object Detection
 <br> by Hughes Perreault<sup>1</sup>, Guillaume-Alexandre Bilodeau<sup>1</sup>, Nicolas Saunier<sup>1</sup> and Maguelonne Héritier<sup>2</sup>.
