@@ -24,5 +24,37 @@ Overview of SpotNet: the input image first passes through a double-stacked hourg
 * CRV 2020 conference material: poster and presentation for the CRV 2020 conference.
 * imgs: images used in the repo.
 
+## Results
+
+For the official references, please refer to the paper.
+
+### Results on UA-DETRAC
+
+| Model                                      | Overall          | Easy             | Medium           | Hard             | Cloudy           | Night            | Rainy            | Sunny            |
+|--------------------------------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|
+| SpotNet (ours)                             | 86.80% | 97.58% | 92.57% | 76.58% | 89.38% | 89.53% | 80.93% | 91.42% |
+| CenterNet | 83.48%          | 96.50%          | 90.15%          | 71.46%          | 85.01%          | 88.82%          | 77.78%          | 88.73%          |
+| FG-BR\_Net         | 79.96%          | 93.49%          | 83.60%          | 70.78%          | 87.36%          | 78.42%          | 70.50%          | 89.8%           |
+| HAT            | 78.64%          | 93.44%          | 83.09%          | 68.04%          | 86.27%          | 78.00%          | 67.97%          | 88.78%          |
+| GP-FRCNNm         | 77.96%          | 92.74%          | 82.39%          | 67.22%          | 83.23%          | 77.75%          | 70.17%          | 86.56%          |
+| R-FCN           | 69.87%          | 93.32%          | 75.67%          | 54.31%          | 74.38%          | 75.09%          | 56.21%          | 84.08%          |
+| EB            | 67.96%          | 89.65%          | 73.12%          | 53.64%          | 72.42%          | 73.93%          | 53.40%          | 83.73%          |
+| Faster R-CNN          | 58.45%          | 82.75%          | 63.05%          | 44.25%          | 66.29%          | 69.85%          | 45.16%          | 62.34%          |
+| YOLOv2       | 57.72%          | 83.28%          | 62.25%          | 42.44%          | 57.97%          | 64.53%          | 47.84%          | 69.75%          |
+| RN-D              | 54.69%          | 80.98%          | 59.13%          | 39.23%          | 59.88%          | 54.62%          | 41.11%          | 77.53%          |
+| 3D-DETnet       | 53.30%          | 66.66%          | 59.26%          | 43.22%          | 63.30%          | 52.90%          | 44.27%          | 71.26%          |
+
+### Results on UAVDT
+
+| Model                                      | Overall          |
+|--------------------------------------------|------------------|
+| SpotNet (Ours)                             | 52.80% |
+| CenterNet | 51.18%          |
+| Wang \etal        | 37.81%          |
+| R-FCN           | 34.35%          |
+| SSD                      | 33.62%          |
+| Faster-RCNN          | 22.32%          |
+| RON                   | 21.59%          |
+
 ## Acknowledgements
 The code for this paper is mainly built upon [CenterNet](https://github.com/xingyizhou/CenterNet), we would therefore like to thank the authors for providing the source code of their paper. We also acknowledge the support of the Natural Sciences and Engineering Research Council of Canada (NSERC), [RDCPJ 508883 - 17], and the support of Genetec.
